@@ -55,6 +55,12 @@ a {
     margin: 0px auto;
   }
 }
+@media (min-width: 1326px) {
+  .container {
+    max-width: 1326px;
+    margin: 0px auto;
+  }
+}
 body {
   background-color: rgba(55, 0, 255, 0.034);
 }
@@ -94,6 +100,7 @@ body {
   font-family: semibold;
   font-size: 45px;
   color: #374639;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 @media (max-width: 991px) {
@@ -107,11 +114,12 @@ body {
   }
 }
 .main1 p {
-  width: 519px;
+  width: 42%;
   font-family: regular;
   line-height: 27px;
   font-size: 19px;
   color: #3f514b;
+  font-weight: 400;
   margin-bottom: 35px;
 }
 @media (max-width: 991px) {
@@ -122,6 +130,11 @@ body {
 @media (max-width: 767px) {
   .main1 p {
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .main1 p {
+    width: 80%;
   }
 }
 .main1 .courses {
@@ -175,6 +188,7 @@ body {
   font-family: regular;
   font-size: 20px;
   color: #414f42;
+  font-weight: 400;
 }
 .main1 .courses .course-item .detail p {
   padding-right: 20px;
@@ -183,6 +197,7 @@ body {
   line-height: 24px;
   font-size: 17px;
   color: #3f514b;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 @media (max-width: 991px) {
@@ -217,11 +232,13 @@ body {
   font-family: regular;
   font-size: 13px;
   color: #72776c;
+  font-weight: 400;
 }
 .main1 .courses .course-item .detail .price .new-price {
   font-family: regular;
   font-size: 18px;
   color: #3f514b;
+  font-weight: 400;
 }
 .main1 .courses .course-item .detail .schedule .schedule-item {
   padding: 20px 0;
@@ -248,15 +265,17 @@ body {
   font-family: regular;
   font-size: 15px;
   color: #72776c;
+  font-weight: 400;
 }
 .main1 .courses .course-item .detail .schedule .schedule-item .content {
   font-family: regular;
   font-size: 14px;
   color: #4e5c58;
+  font-weight: 400;
 }
 
 .main2 {
-  width: 70%;
+  width: 90%;
   border-radius: 20px;
   background-color: #fff;
   padding: 25px;
@@ -287,7 +306,7 @@ body {
 }
 .main2 .image {
   width: 47%;
-  aspect-ratio: 1.392033543;
+  aspect-ratio: 1.3431578947;
 }
 @media (max-width: 991px) {
   .main2 .image {
@@ -301,16 +320,11 @@ body {
   object-fit: cover;
 }
 .main2 .quote {
-  padding: 15px 70px 0;
+  padding: 15px 30px 0;
   width: 53%;
   text-align: center;
 }
 @media (max-width: 991px) {
-  .main2 .quote {
-    width: 70%;
-  }
-}
-@media (max-width: 767px) {
   .main2 .quote {
     width: 100%;
   }
@@ -319,6 +333,7 @@ body {
   font-family: regular;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3568627451);
+  font-weight: 400;
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
@@ -345,9 +360,10 @@ body {
   }
 }
 .main2 .quote p {
-  font-family: bold;
-  font-size: 18px;
+  font-family: semibold;
+  font-size: 30px;
   color: #0d0d0d;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 @media (max-width: 991px) {
@@ -362,13 +378,15 @@ body {
 }
 .main2 .quote .name {
   font-family: regular;
-  font-size: 12px;
+  font-size: 16px;
   color: #0d0d0d;
+  font-weight: 400;
 }
 .main2 .quote .career {
   font-family: regular;
-  font-size: 10px;
+  font-size: 15px;
   color: rgba(0, 0, 0, 0.3568627451);
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

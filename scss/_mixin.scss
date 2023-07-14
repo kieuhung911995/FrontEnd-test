@@ -23,12 +23,14 @@ a {
   font-family: $fontfa;
   font-size: $fontsize;
   color: $color;
+  font-weight: 400;
 }
 @mixin text($fontsize, $color, $lineheight) {
   font-family: regular;
   line-height: $lineheight;
   font-size: $fontsize;
   color: $color;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .container {
@@ -47,6 +49,12 @@ a {
 @media (min-width: 1200px) {
   .container {
     max-width: 1180px;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 1326px) {
+  .container {
+    max-width: 1326px;
     margin: 0px auto;
   }
 }

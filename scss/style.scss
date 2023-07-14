@@ -14,9 +14,12 @@ body {
     @include marginBottom(25px);
   }
   p {
-    width: 519px;
+    width: 42%;
     @include text(19px, $--text-color, 27px);
     @include marginBottom(35px);
+    @include maxWidth(991px) {
+      width: 80%;
+    }
   }
   .courses {
     display: flex;
@@ -91,7 +94,7 @@ body {
   }
 }
 .main2 {
-  width: 70%;
+  width: 90%;
   border-radius: 20px;
   background-color: #fff;
   padding: 25px;
@@ -107,7 +110,7 @@ body {
   }
   .image {
     width: 47%;
-    aspect-ratio: calc(664 / 477);
+    aspect-ratio: calc(638 / 475);
     @include maxWidth(991px) {
       width: 70%;
     }
@@ -117,13 +120,10 @@ body {
     }
   }
   .quote {
-    padding: 15px 70px 0;
+    padding: 15px 30px 0;
     width: 53%;
     text-align: center;
     @include maxWidth(991px) {
-      width: 70%;
-    }
-    @include maxWidth(767px) {
       width: 100%;
     }
     .title {
@@ -134,14 +134,14 @@ body {
       @include marginBottom(10px);
     }
     p {
-      @include font(bold, 18px, #0d0d0d);
+      @include font(semibold, 30px, #0d0d0d);
       @include marginBottom(10px);
     }
     .name {
-      @include font(regular, 12px, #0d0d0d);
+      @include font(regular, 16px, #0d0d0d);
     }
     .career {
-      @include font(regular, 10px, #0000005b);
+      @include font(regular, 15px, #0000005b);
     }
   }
 }
