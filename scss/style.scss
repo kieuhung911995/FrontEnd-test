@@ -1,0 +1,147 @@
+@import "./_mixin.scss";
+body {
+  background-color: rgba(55, 0, 255, 0.034);
+}
+.main1 {
+  margin-top: 100px;
+  background-color: #fffdf4;
+  padding-left: 100px;
+  padding-right: 100px;
+  @include paddingBotTop(40px);
+  @include marginBottom(80px);
+  h1 {
+    @include font(semibold, 45px, #374639);
+    @include marginBottom(25px);
+  }
+  p {
+    width: 519px;
+    @include text(19px, $--text-color, 27px);
+    @include marginBottom(35px);
+  }
+  .courses {
+    display: flex;
+    justify-content: space-between;
+    @include maxWidth(991px) {
+      flex-wrap: wrap;
+    }
+    @include maxWidth(767px) {
+      justify-content: center;
+    }
+    .course-item {
+      width: 24%;
+      @include maxWidth(991px) {
+        width: 49%;
+      }
+      @include maxWidth(767px) {
+        width: 70%;
+      }
+      .image {
+        width: 100%;
+        aspect-ratio: calc(365 / 266);
+        @include marginBottom(10px);
+        img {
+          @include resizeImg-cover;
+        }
+      }
+      .detail {
+        h2 {
+          @include font(regular, 20px, #414f42);
+        }
+        p {
+          padding-right: 20px;
+          width: 100%;
+          @include text(17px, $--text-color, 24px);
+          @include marginBottom(15px);
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          @include marginBottom(20px);
+          .old-price {
+            padding-top: 3px;
+            text-decoration: line-through;
+            @include font(regular, 13px, #72776c);
+          }
+          .new-price {
+            @include font(regular, 18px, $--text-color);
+          }
+        }
+        .schedule {
+          .schedule-item {
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            border-bottom: $--border;
+            @include gap(20px);
+            &:first-child {
+              border-top: $--border;
+            }
+            .week {
+              text-transform: uppercase;
+              @include font(regular, 15px, #72776c);
+            }
+            .content {
+              @include font(regular, 14px, #4e5c58);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.main2 {
+  width: 70%;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  @include marginBottom(50px);
+  @include maxWidth(991px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include maxWidth(767px) {
+    margin: 0px auto;
+  }
+  .image {
+    width: 47%;
+    aspect-ratio: calc(664 / 477);
+    @include maxWidth(991px) {
+      width: 70%;
+    }
+    img {
+      border-radius: 10px;
+      @include resizeImg-cover;
+    }
+  }
+  .quote {
+    padding: 15px 70px 0;
+    width: 53%;
+    text-align: center;
+    @include maxWidth(991px) {
+      width: 70%;
+    }
+    @include maxWidth(767px) {
+      width: 100%;
+    }
+    .title {
+      @include font(regular, 14px, #0000005b);
+      @include marginBottom(30px);
+    }
+    svg {
+      @include marginBottom(10px);
+    }
+    p {
+      @include font(bold, 18px, #0d0d0d);
+      @include marginBottom(10px);
+    }
+    .name {
+      @include font(regular, 12px, #0d0d0d);
+    }
+    .career {
+      @include font(regular, 10px, #0000005b);
+    }
+  }
+}

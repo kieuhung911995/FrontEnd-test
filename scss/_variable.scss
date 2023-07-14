@@ -1,0 +1,17 @@
+$--text-color: #3f514b;
+$--border: solid 1px #ecedec;
+@font-face {
+  font-family: bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: semibold;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-display: swap;
+}
